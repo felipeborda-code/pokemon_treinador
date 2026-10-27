@@ -2,7 +2,7 @@ import { treinadorServices } from "../services/treinador.services.js";
 
 class TreinadorController {
 
-    async put(req, res) {
+    async putTreinador(req, res) {
     const treinadorId = req.params.id
     try {
         const treinador = await treinadorServices.put(treinadorId, req.body);
@@ -12,7 +12,7 @@ class TreinadorController {
     }
 }
 
-    async knex (req, res) {
+    async knexTreinador (req, res) {
     const treinadorId = req.params.id
     try {
         const treinador = await treinadorServices.knex(treinadorId, req.body);

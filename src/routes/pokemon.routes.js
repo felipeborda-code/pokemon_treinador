@@ -3,5 +3,5 @@ import { Router } from "express";
 
 export const pokemonRouter = Router();
 
-pokemonRouter.put("/:id", pokemonController.put);
-pokemonRouter.patch("/:id", pokemonController.knex);
+pokemonRouter.put("/:id", pokemonController.putPokemon);
+pokemonRouter.patch("/:id", pokemonController.knexPokemon);

@@ -3,5 +3,5 @@ import { Router } from "express";
 
 export const treinadorRouter = Router();
 
-treinadorRouter.put("/:id", treinadorController.put);
-treinadorRouter.patch("/:id", treinadorController.knex);
+treinadorRouter.put("/:id", treinadorController.putTreinador);
+treinadorRouter.patch("/:id", treinadorController.knexTreinador);

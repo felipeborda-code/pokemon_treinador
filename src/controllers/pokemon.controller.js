@@ -2,7 +2,7 @@ import { pokemonServices } from "../services/pokemon.services.js";
 
 class PokemonController {
 
-    async put(req, res) {
+    async putPokemon(req, res) {
     const pokemonId = req.params.id
     try {
         const pokemon = await pokemonServices.put(pokemonId, req.body);
@@ -12,7 +12,7 @@ class PokemonController {
     }
 }
 
-    async knex (req, res) {
+    async knexPokemon (req, res) {
     const pokemonId = req.params.id
     try {
         const pokemon = await pokemonServices.knex(pokemonId, req.body);
